@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool GCF Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <title>Find da GCF</title>
 </head>
 <body>
-<p>Enter ur two numbers</p>
-<textarea placeholder="1st number" id="input-num1" cols="30" rows="10"></textarea>
-<textarea placeholder="1st number" id="input-num2" cols="30" rows="10"></textarea>
-<br>
-<button id="find-GCF-button">Find da GCF</button>
-<p id="display-error-msg"></p>
-<p>The GCF is: <span id="gcf-output"><span></p>
+<main>
+    <article>
+    <section class="title-header">
+        <h1>Find da GCF</h1>
+        <sub>A beginner project by Myrtletea</sub>
+    </section>
+    
+    <section class="main-part">
+        <p>Enter ur two numbers</p>
+        <textarea placeholder="1st number" id="input-num1" rows="4"></textarea>
+        <textarea placeholder="2nd number" id="input-num2" rows="4"></textarea>
+        <br>
+        <div class="gcf-button">
+            <button id="find-GCF-button" class="gcf-button-top">Find da GCF</button>
+            <div class="gcf-button-bottom"></div>
+        </div>
+        
+        <p id="display-error-msg"></p>
+        <p>The GCF is: </p>
+        <p id="gcf-output"></p>
+    </section>
+    </article>
+    
+</main>
 
     
 <script src="main.js"></script>
