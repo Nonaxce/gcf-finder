@@ -26,17 +26,9 @@ const listOfSentencesIncreasingInFrustration = [
    "So examples of numbers are 1, 2, 3, 56, 420 and definitely not that",
    "Is your mouse broken, kindly check tho if it is",
    "I can't let you put that there, sorry",
-   "Are you perhaps blind?, sorry if that's offensive",
    "I said to enter two numbers, bot some weird word or nothing.",
    "....",
-   "Please enter a [redacted] number",
-   "TWO [redacted] numbers",
-   ".....",
-   "I have an array and two strings I need to feed so please..",
-   "*Sobbing* Please *sniff* I gotta do stuff for other people.",
-   "It's okay, I'm just some binary on a weird program, I get that",
-   "I'll let you leave, its okay, I'll stay here",
-
+   "I'll let you leave, its okay, I'll stay here"
 ];
 let angerMeter = 0;
 findGCFBtn.addEventListener("click", () => {
@@ -45,7 +37,7 @@ findGCFBtn.addEventListener("click", () => {
    // outputs the GCF
    if ((!js_num1 || !js_num2) || (Number.isInteger(js_num1) === false || Number.isInteger(js_num2) === false)) {
       angerMeter++;
-      if (angerMeter > listOfSentencesIncreasingInFrustration.length) {
+      if (angerMeter >= listOfSentencesIncreasingInFrustration.length) {
          errorMsg.innerHTML = "....."
       } else {
          errorMsg.innerHTML = listOfSentencesIncreasingInFrustration[angerMeter];
