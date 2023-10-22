@@ -4,15 +4,12 @@ for the GCF of any two variables
 
 Code by: Myrtletea (formerly Nonaxce)
 */
-window.onbeforeunload = function() {
-   return "Farewell.. person";
-};
-
 const num1 = document.getElementById("input-num1");
 const num2 = document.getElementById("input-num2");
 
 const findGCFBtn = document.getElementById("find-GCF-button");
 let gcfOutput = document.getElementById("gcf-output");
+gcfOutput.innerHTML = " "; // default
 let errorMsg = document.getElementById("display-error-msg")
 errorMsg.innerHTML = "Please enter two numbers"; // default
 
@@ -37,6 +34,7 @@ findGCFBtn.addEventListener("click", () => {
    // outputs the GCF
    if ((!js_num1 || !js_num2) || (Number.isInteger(js_num1) === false || Number.isInteger(js_num2) === false)) {
       angerMeter++;
+      gcfOutput.innerHTML = " ";
       if (angerMeter >= listOfSentencesIncreasingInFrustration.length) {
          errorMsg.innerHTML = "....."
       } else {
